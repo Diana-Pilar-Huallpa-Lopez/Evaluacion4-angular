@@ -1,0 +1,24 @@
+
+<br>
+<br>
+<br>
+<div class="card text-bg-secondary mb-3">
+    <div class="card-header">Lista de docente</div>
+    <div class="card-body" style="background-color:aliceblue;">
+        <table class="table table-striped table-hover">
+            <thead>
+              <tr>
+                <th scope="col">CodDocente</th>
+                <th scope="col">HorasDiaras</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let itemDocente of listaDocente " class="text-bg-secondary mb-3">
+                <td>{{itemDocente.CodDocente}}</td>
+                <td>{{itemDocente.horasDiaras}}</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+  </div>
+
